@@ -78,21 +78,21 @@ export default [
     plugins: getPlugins("index"),
     external: ["pixi.js", "prop-types", "react", "react-dom", "scheduler"],
   },
-  {
-    input: "src/index.js",
-    output: {
-      file: getOutputFile("react-pixi-mini"),
-      name: "ReactPixiFiber",
-      exports: "named",
-      format: "cjs",
-    },
-    plugins: getPlugins("mini", [
-      babel({
-        plugins: [["module-resolver", { alias: { "pixi.js": "@tbminiapp/pixi-miniprogram-engine" } }]],
-      }),
-    ]),
-    external: ["pixi.js", "prop-types", "react", "react-dom", "@tbminiapp/pixi-miniprogram-engine", "scheduler"],
-  },
+  // {
+  //   input: "src/index.js",
+  //   output: {
+  //     file: getOutputFile("react-pixi-mini"),
+  //     name: "ReactPixiFiber",
+  //     exports: "named",
+  //     format: "cjs",
+  //   },
+  //   plugins: getPlugins("mini", [
+  //     babel({
+  //       plugins: [["module-resolver", { alias: { "pixi.js": "@tbminiapp/pixi-miniprogram-engine" } }]],
+  //     }),
+  //   ]),
+  //   external: ["pixi.js", "prop-types", "react", "react-dom", "@tbminiapp/pixi-miniprogram-engine", "scheduler"],
+  // },
   {
     input: "src/index.js",
     output: {
