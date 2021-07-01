@@ -1,0 +1,94 @@
+{
+  "name": "@augustaba/react-pixi-fiber",
+  "version": "0.0.1-alpha",
+  "description": "React Fiber renderer for PixiJS",
+  "main": "index.js",
+  "umd:main": "umd.js",
+  "module": "module.js",
+  "jsnext:main": "module.js",
+  "typings": "index.d.ts",
+  "files": [
+    "README.md",
+    "index.d.ts",
+    "index.js",
+    "react-pixi-mini.js",
+    "cjs/",
+    "umd/",
+    "src/"
+  ],
+  "dependencies": {
+    "fbjs": "^0.8.0",
+    "performance-now": "^2.1.0",
+    "react-reconciler": "^0.25.0",
+    "scheduler": "^0.19.0"
+  },
+  "peerDependencies": {
+    "@tbminiapp/pixi-miniprogram-engine": "^1.0.26",
+    "pixi.js": "^4.4.0",
+    "prop-types": "^15.7.2",
+    "react": "^16.6.0",
+    "react-dom": "^16.6.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.3.3",
+    "@babel/plugin-syntax-dynamic-import": "^7.2.0",
+    "@babel/preset-env": "^7.3.1",
+    "@babel/preset-react": "^7.0.0",
+    "@tbminiapp/pixi-miniprogram-engine": "^1.0.26",
+    "@types/react": "^16.0.0",
+    "babel-eslint": "^10.0.1",
+    "babel-plugin-module-resolver": "^4.1.0",
+    "babel-plugin-rewire": "^1.2.0",
+    "canvas": "^2.3.1",
+    "cross-env": "^5.2.0",
+    "eslint": "^5.14.1",
+    "eslint-config-prettier": "^4.0.0",
+    "eslint-plugin-babel": "^5.1.0",
+    "eslint-plugin-import": "^2.11.0",
+    "eslint-plugin-prettier": "^3.0.1",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-react": "^7.7.0",
+    "eslint-plugin-react-hooks": "^2.0.1",
+    "jest": "^24.1.0",
+    "jsdom": "^13.2.0",
+    "pixi.js": "^4.8.8",
+    "prettier": "^1.12.1",
+    "react": "^16.6.0",
+    "react-dom": "^16.6.0",
+    "react-test-renderer": "^16.0.0",
+    "rollup": "^0.68.2",
+    "rollup-plugin-babel": "^4.3.2",
+    "rollup-plugin-commonjs": "^9.2.1",
+    "rollup-plugin-json": "^3.1.0",
+    "rollup-plugin-node-globals": "^1.4.0",
+    "rollup-plugin-node-resolve": "^4.0.1",
+    "rollup-plugin-replace": "^2.1.0",
+    "rollup-plugin-terser": "^4.0.4",
+    "rollup-plugin-visualizer": "^0.9.2",
+    "typescript": "^3.7.5"
+  },
+  "scripts": {
+    "build": "npm run build:clean && npm run build:prod && npm run build:dev",
+    "build:clean": "rm -rf cjs && rm -rf umd && rm -rf esm",
+    "build:dev": "cross-env NODE_ENV=development rollup -c config/rollup.config.js",
+    "build:prod": "cross-env NODE_ENV=production rollup -c config/rollup.config.js",
+    "eslint": "eslint src",
+    "eslint-check": "eslint --print-config .eslintrc.json | eslint-config-prettier-check"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/augustaba/react-pixi-fiber.git"
+  },
+  "keywords": [
+    "pixi.js",
+    "@tbminiapp/pixi-miniprogram-engine",
+    "react"
+  ],
+  "author": "augustaba",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/augustaba/react-pixi-fiber/issues"
+  },
+  "homepage": "https://github.com/augustaba/react-pixi-fiber#readme"
+}
