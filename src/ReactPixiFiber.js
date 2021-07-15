@@ -206,6 +206,12 @@ export function createInstance(type, props, internalInstanceHandle) {
         instance = new PIXI.TilingSprite(props.texture, props.width, props.height);
       }
       break;
+    // case TYPES.ANIMATED_SPRITE:
+    //   try {
+    //     instance = new PIXI.extras.AnimatedSprite(props.textures, true);
+    //   } catch(e) {
+    //     instance = new PIXI.AnimatedSprite(props.textures);
+    //   }
     default:
       instance = createInjectedTypeInstance(type, props, internalInstanceHandle, defaultApplyProps);
       break;

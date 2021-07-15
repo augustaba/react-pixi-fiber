@@ -8,4 +8,5 @@ export const TYPES = {
   SPRITE: "Sprite",
   TEXT: "Text",
   TILING_SPRITE: "TilingSprite",
+  // ANIMATED_SPRITE: 'AnimatedSprite'
 };

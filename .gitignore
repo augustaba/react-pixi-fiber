@@ -16,3 +16,5 @@ chrome-user-data
 *.swo
 .envrc
 /stats.*.html
+yarn.lock
+packgae-lock.json

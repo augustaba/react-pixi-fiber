@@ -1,6 +1,6 @@
 {
   "name": "@augustaba/react-pixi-fiber",
-  "version": "0.0.2-alpha",
+  "version": "0.0.4-alpha.1",
   "description": "React Fiber renderer for PixiJS",
   "main": "index.js",
   "umd:main": "umd.js",
@@ -11,9 +11,12 @@
     "README.md",
     "index.d.ts",
     "index.js",
+    "module.js",
+    "umd.js",
     "react-pixi-mini.js",
     "cjs/",
     "umd/",
+    "esm",
     "src/"
   ],
   "dependencies": {

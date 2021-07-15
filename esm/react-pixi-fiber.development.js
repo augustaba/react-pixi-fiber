@@ -1,6 +1,6 @@
+import React, { useContext, useEffect, useState, useRef, useLayoutEffect } from 'react';
 import PropTypes from 'prop-types';
 import { Application, Point, ObservablePoint, extras, BitmapText, Container, Graphics, mesh, NineSlicePlane, particles, ParticleContainer, Sprite, Text, TilingSprite } from 'pixi.js';
-import React, { useContext, useEffect, useState, useRef, useLayoutEffect } from 'react';
 import scheduler, { unstable_cancelCallback, unstable_scheduleCallback } from 'scheduler';
 
 function ownKeys(object, enumerableOnly) {
