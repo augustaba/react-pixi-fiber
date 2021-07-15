@@ -4,7 +4,7 @@ import Stage, { createStageClass } from "./Stage";
 import { TYPES } from "./types";
 import { usePixiApp, usePixiTicker, usePixiAppCreator } from "./hooks";
 import { createRender, createUnmount } from "./render";
-import { ReactPixiFiberAsPrimaryRenderer, applyProps, unstable_batchedUpdates } from "./ReactPixiFiber";
+import { ReactPixiFiberAsPrimaryRenderer, applyProps, unstable_batchedUpdates, defaultApplyProps } from "./ReactPixiFiber";
 
 const render = createRender(ReactPixiFiberAsPrimaryRenderer);
 const unmount = createUnmount(ReactPixiFiberAsPrimaryRenderer);
@@ -25,6 +25,7 @@ export {
   usePixiTicker,
   usePixiAppCreator,
   unstable_batchedUpdates,
+  defaultApplyProps
 };
 
 export const BitmapText = TYPES.BITMAP_TEXT;
