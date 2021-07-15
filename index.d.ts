@@ -285,14 +285,14 @@ declare module "@augustaba/react-pixi-fiber" {
 
   // Create a custom component.
   export function CustomPIXIComponent<T extends PIXI.DisplayObject, P>(
-    behavior: CustomPIXIComponentBehavior<T, P>,
+    behavior: CustomPIXIComponentBehavior<T, P> & ThisType<{ applyDisplayObjectProps: (oldProps: P, newProps: P) => void }>,
     type: string
   ): // Props defined on custom component overwrite props of underlying DisplayObject
   PixiComponent<P & DisplayObjectProps<Omit<T, keyof P>>>;
 
   // Used to apply `newProps` to your `DisplayObject`.
   export function applyProps<T extends PIXI.DisplayObject, P>(displayObject: T, oldProps: P, newProps: P): void;
-  
+
   export function defaultApplyProps<T extends PIXI.DisplayObject, P>(displayObject: T, oldProps: P, newProps: P): void;
 
   /**
