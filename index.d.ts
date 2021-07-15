@@ -292,6 +292,8 @@ declare module "@augustaba/react-pixi-fiber" {
 
   // Used to apply `newProps` to your `DisplayObject`.
   export function applyProps<T extends PIXI.DisplayObject, P>(displayObject: T, oldProps: P, newProps: P): void;
+  
+  export function defaultApplyProps<T extends PIXI.DisplayObject, P>(displayObject: T, oldProps: P, newProps: P): void;
 
   /**
    * `PIXI.Application` context.
